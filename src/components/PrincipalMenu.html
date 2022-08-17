@@ -1,0 +1,39 @@
+<body class="color">
+  <div class="container">
+    <div class="col-12">
+      <br>
+      <strong><h3 class="color1"><v-text>{{titulo}}</v-text></h3></strong>
+      <div>
+        <div><b-img src="src/assets/QATAR-1.png" fluid-grow alt="Fluid-grow
+            image"></b-img></div>
+        <img v-bind:src="src" alt="">
+        <v-container fluid class="dashboard-page">
+          <v-text>{{informacion}}</v-text>
+        </v-container>
+      </div>
+
+      <br>
+      <div class="container">
+        <h4 class="text-center">Qatar</h4>
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>Continente</th>
+              <th>Descripcion</th>
+              <th>Habitantes</th>
+              <th>Habitantes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in arrayPrincipal" v-bind:key="item"> <!-- Recorremos nuestro array -->
+              <td>{{item.Continente}}</td>
+              <td>{{item.Descripcion}}</td>
+              <td>{{item.Habitantes}}</td>
+              <td>{{item.Nombre}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div><br>
+</body>

@@ -1,0 +1,31 @@
+<body>
+  <div class="container">
+    <div class="col-12">
+      <br>
+
+      <div class="container">
+        <strong><h3 class="text-center">GRUPOS</h3></strong>
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Pais 1</th>
+              <th>Pais 2</th>
+              <th>Pais 3</th>
+              <th>Pais 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in arrayGrupos" v-bind:key="item"> <!-- Recorremos nuestro array -->
+              <td>{{item.Grupo}}</td>
+              <td>{{item.Pais1}}</td>
+              <td>{{item.Pais2}}</td>
+              <td>{{item.Pais3}}</td>
+              <td>{{item.Pais4}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div><br>
+</body>

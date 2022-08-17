@@ -1,0 +1,25 @@
+<body class="cuerpo">
+  <div class="container">
+    <div class="col-12">
+      <br>
+
+      <div class="container">
+        <strong><h3 class="text-center estadioColor">ESTADIOS</h3><br></strong>
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>Capacidad</th>
+              <th>Nombre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in arrayEstadios" v-bind:key="item"> <!-- Recorremos nuestro array -->
+              <td>{{item.Capacidad}}</td>
+              <td>{{item.nombre}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div><br>
+</body>

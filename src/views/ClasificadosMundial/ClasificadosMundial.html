@@ -1,0 +1,34 @@
+<body>
+  <div class="container">
+    <div class="col-12">
+      <br>
+      
+      <div>
+        <v-container fluid class="dashboard-page">
+          <strong><h3 class="text-center">CLASIFICADOS MUNDIAL QATAR 2022</h3></strong>
+          <v-text class="text-center">{{informacion}}</v-text>
+        </v-container>
+      </div>
+
+      <br>
+      <div class="container">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>Confederacion</th>
+              <th>Grupo</th>
+              <th>Nombre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in arrayClasificados" v-bind:key="item"> <!-- Recorremos nuestro array -->
+              <td>{{item.Confederacion}}</td>
+              <td>{{item.Grupo}}</td>
+              <td>{{item.Nombre}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div><br>
+</body>
